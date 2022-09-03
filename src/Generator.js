@@ -2,8 +2,8 @@ export default function Generator (flavors, spirits, cocktails, themes, containe
     let output="";
     let intDrinkChoice=Math.floor(Math.random()*9);
     //chooses the numbers ahead of time to save lines on the switch statements
-    let intFlavorChoice=1;
-    let intFlavorChoice2=1;
+    let intFlavorChoice=Math.floor(Math.random()*(flavors.length-1));
+    let intFlavorChoice2=Math.floor(Math.random()*(flavors.length-1));
     let intCocktailChoice=Math.floor(Math.random()*(cocktails.length-1));
     let intSpiritChoice=Math.floor(Math.random()*(spirits.length-1));
     let intThemeChoice=Math.floor(Math.random()*(themes.length-1));
@@ -13,21 +13,21 @@ export default function Generator (flavors, spirits, cocktails, themes, containe
     let isContainer=Math.random()<0.5; //50% bool statement
     let isSuper=Math.random()<0.1; //50% bool statement
 
-    // while(true){ //loops to make sure there are no flavor duplicates
-    //     if(intFlavorChoice!=intFlavorChoice2){
-    //         break;
-    //     }
-    //     intFlavorChoice=Math.floor(Math.random()*flavors.length-1);
-    //     intFlavorChoice2=Math.floor(Math.random()*flavors.length-1);
-    // }
+    while(true){ //loops to make sure there are no flavor duplicates
+        if(intFlavorChoice!=intFlavorChoice2){
+            break;
+        }
+        intFlavorChoice=Math.floor(Math.random()*(flavors.length-1));
+        intFlavorChoice2=Math.floor(Math.random()*(flavors.length-1));
+    }
 
-    // while(true){ //loops to make sure there are no theme duplicates and 2 colors
-    //     if((intThemeChoice!=intThemeChoice2)&&!(themes[intThemeChoice].color&&themes[intThemeChoice2].color)){
-    //         break;
-    //     }
-    //     intThemeChoice=Math.floor(Math.random()*themes.length-1);
-    //     intThemeChoice2=Math.floor(Math.random()*themes.length-1);
-    // }
+    while(true){ //loops to make sure there are no theme duplicates and 2 colors
+        if((intThemeChoice!=intThemeChoice2)&&!(themes[intThemeChoice].color&&themes[intThemeChoice2].color)){
+            break;
+        }
+        intThemeChoice=Math.floor(Math.random()*(themes.length-1));
+        intThemeChoice2=Math.floor(Math.random()*(themes.length-1));
+    }
 
 
     switch(intDrinkChoice){

@@ -3,7 +3,10 @@ import data from './data/db.json'
 import Generator from './Generator'
 import React, { useState } from 'react';
 import Homeboy1 from './assets/homeboy1.mp3'
-import {Howl, Howler} from 'howler'
+import {Howl} from 'howler'
+import {Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const audioClips = [
   {sound: Homeboy1, label: 'Homeboy1'}
@@ -40,8 +43,11 @@ function App() {
     <div className="App">
       <div className="Title">
         <h1 className="Header">Not feeling tipsy enough?</h1>
-        <button onClick={()=>handlePress()}/>
-        <h2>{drink}</h2>
+        <div style={{justifyContent:'center', alignItems:'center', display: 'inline'}}>
+          <Button variant="danger" onClick={()=>handlePress()}>Tipsy</Button>
+          <h4 style={{textAlign:'left'}}>Try the</h4>
+          <h2 style={{textAlign:'left'}}>{drink}</h2>
+        </div>
       </div>
     </div>
   );
