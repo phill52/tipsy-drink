@@ -1,0 +1,219 @@
+{
+    "flavor": [
+        {
+            "title":"Watermelon",
+            "ingredient": "Watermelon Juice",
+            "id": 1
+        },
+        {
+            "title":"Lime",
+            "ingredient": "Lime Juice",
+            "id": 2
+        },
+        {
+            "title":"Cranberry",
+            "ingredient": "Cranberry Juice",
+            "id": 3
+        },
+        {
+            "title":"Cotton Candy",
+            "ingredient": "Cotton Candy",
+            "id": 4
+        },
+        {
+            "title":"Cherry",
+            "ingredient": "Cherry Juice",
+            "id": 5
+        },
+        {
+            "title":"Peach",
+            "ingredient": "Peach Juice",
+            "id": 6
+        },
+        {
+            "title":"Pineapple",
+            "ingredient": "Pineapple Juice",
+            "id": 7
+        },
+        {
+            "title":"Apple",
+            "ingredient": "Apple Cider",
+            "id": 8
+        },
+        {
+            "title":"Dragonfruit",
+            "ingredient": "Dragonfruit",
+            "id": 9
+        },
+        {
+            "title":"Mango",
+            "ingredient": "Mango Nectar",
+            "id": 10
+        },
+        {
+            "title":"Acai",
+            "ingredient": "Acai",
+            "id": 11
+        },
+        {
+            "title":"Blueberry",
+            "ingredient": "Blueberry Syrup",
+            "id": 12
+        },
+        {
+            "title":"Sour Apple",
+            "ingredient": "Sour Apple Pucker",
+            "id": 13
+        },
+        {
+            "title":"Raspberry",
+            "ingredient": "Raspberry Syrup",
+            "id": 14
+        },
+        {
+            "title":"Orange",
+            "ingredient": "Orange Juice",
+            "id": 15
+        }
+    ],
+    "spirit": [
+        {
+            "title":"Vodka",
+            "id":1
+        },
+        {
+            "title":"Tequila",
+            "id":2
+        },
+        {
+            "title":"Rum",
+            "id":3
+        },
+        {
+            "title":"Gin",
+            "id":4
+        }
+        
+    ],
+    "cocktail":[
+        {
+            "title":"Margarita",
+            "id":1
+        },
+        {
+            "title":"Mojito",
+            "id":2
+        },
+        {
+            "title":"Negroni",
+            "id":3
+        },
+        {
+            "title":"Daquiri",
+            "id":4
+        },
+        {
+            "title":"Slush",
+            "id":5
+        },
+        {
+            "title":"Paloma",
+            "id":6
+        },
+        {
+            "title":"Colada",
+            "id":7
+        },
+        {
+            "title":"Jello Shot",
+            "id":8
+        },
+        {
+            "title":"Shake",
+            "id":9
+        },
+        {
+            "title":"Sangria",
+            "id":10
+        }
+    ],
+    "theme": [
+        {
+            "title":"Blue",
+            "color":true,
+            "id":1
+        },
+        {
+            "title":"Summer",
+            "color":false,
+            "id":2
+        },
+        {
+            "title":"TikTok",
+            "color":false,
+            "id":3
+        },
+        {
+            "title":"Tropical",
+            "color":false,
+            "id":4
+        },
+        {
+            "title":"Jolly Rancher",
+            "color":false,
+            "id":5
+        },
+        {
+            "title":"Pink",
+            "color":true,
+            "id":6
+        },
+        {
+            "title":"Jersey",
+            "color":false,
+            "id":7
+        },
+        {
+            "title":"Popsicle",
+            "color":false,
+            "id":8
+        },
+        {
+            "title":"Unicorn",
+            "color":false,
+            "id":9
+        },
+        {
+            "title":"Budget",
+            "color":false,
+            "id":10
+        }
+    ],
+    "container":[
+        {
+            "title":"Kitchen Sink",
+            "id":1
+        },
+        {
+            "title":"Bathtub",
+            "id":2
+        },
+        {
+            "title":"Cooler",
+            "id":3
+        },
+        {
+            "title":"Toilet",
+            "id":4
+        },
+        {
+            "title":"Gallon Jug",
+            "id":5
+        },
+        {
+            "title":"Gallon Jug",
+            "id":6
+        }
+    ]
+    
+}
