@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tipsy-drink/static/css/main.9353eea2.css",
+    "main.js": "/tipsy-drink/static/js/main.4b9f8f2a.js",
+    "static/js/787.0468ed56.chunk.js": "/tipsy-drink/static/js/787.0468ed56.chunk.js",
+    "static/media/homeboy1.mp3": "/tipsy-drink/static/media/homeboy1.e2544130ce035bc8b6a9.mp3",
+    "index.html": "/tipsy-drink/index.html",
+    "main.9353eea2.css.map": "/tipsy-drink/static/css/main.9353eea2.css.map",
+    "main.4b9f8f2a.js.map": "/tipsy-drink/static/js/main.4b9f8f2a.js.map",
+    "787.0468ed56.chunk.js.map": "/tipsy-drink/static/js/787.0468ed56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9353eea2.css",
+    "static/js/main.4b9f8f2a.js"
+  ]
+}
