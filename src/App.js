@@ -43,10 +43,9 @@ function App() {
     <div className="App">
       <div>
         <h1 className="Header">Not feeling tipsy enough?</h1>
-          <Button variant="danger" onClick={()=>handlePress()}>Tipsy</Button>
+          <Button variant="danger" style={{justifyContent: 'center'}} onClick={()=>handlePress()}>Tipsy</Button>
           <h4 style={{textAlign: 'center'}}>Try the</h4>
           <h2 style={{textAlign: 'center'}}>{drink}</h2>
-          <h2>hiello</h2>
           <div className="Bottom">Drink responsibly. Never drink and drive.</div>
       </div>
       {/* <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5> */}

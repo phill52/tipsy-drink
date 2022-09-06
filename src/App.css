@@ -1,3 +1,8 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Snicker";
   src: local("Snicker"),
@@ -6,15 +11,18 @@
   }
 
 .App {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  /* height: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
   background:linear-gradient(rgba(235,235,235,255),rgba(235,235,235,255));
-  min-height: 100%;
+  /* min-height: 100%; */
+  /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 .title{
   width: 60%;
@@ -25,6 +33,7 @@
   color: #FF6700;
   font-family:Snicker;
   text-align: center;
+  justify-content: center;
   font-size: 60px;
 }
 
