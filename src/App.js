@@ -6,7 +6,7 @@ import Homeboy1 from './assets/homeboy1.mp3'
 import {Howl} from 'howler'
 import {Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './assets/Snicker-Bold.ttf';
 
 const audioClips = [
   {sound: Homeboy1, label: 'Homeboy1'}
@@ -41,14 +41,15 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Title">
+      <div>
         <h1 className="Header">Not feeling tipsy enough?</h1>
-        <div style={{justifyContent:'center', alignItems:'center', display: 'inline'}}>
           <Button variant="danger" onClick={()=>handlePress()}>Tipsy</Button>
-          <h4 style={{textAlign:'left'}}>Try the</h4>
-          <h2 style={{textAlign:'left'}}>{drink}</h2>
-        </div>
+          <h4 style={{textAlign: 'center'}}>Try the</h4>
+          <h2 style={{textAlign: 'center'}}>{drink}</h2>
+          <h2>hiello</h2>
+          <div className="Bottom">Drink responsibly. Never drink and drive.</div>
       </div>
+      {/* <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5> */}
     </div>
   );
 }
