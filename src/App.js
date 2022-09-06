@@ -41,12 +41,13 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <h1 className="Header">Not feeling tipsy enough?</h1>
+      <div  className="Header">
+        <h5 style={{fontSize:0}}>⠀</h5>
+        <h1 style={{marginTop:'5%', textAlign: 'center'}}>Feeling Tipsy?</h1>
           <Button variant="danger" style={{justifyContent: 'center'}} onClick={()=>handlePress()}>Tipsy</Button>
-          <h4 style={{textAlign: 'center'}}>Try the</h4>
-          <h2 style={{textAlign: 'center'}}>{drink}</h2>
-          <div className="Bottom">Drink responsibly. Never drink and drive.</div>
+          <h4 style={{textAlign: 'center', marginTop:'10%'}}>Try the</h4>
+          <h2 style={{textAlign: 'center', alignContent: 'center'}}><span style={{backgroundColor: 'rgb(235,235,235)'}}>{drink}</span></h2>
+          <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5>
       </div>
       {/* <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5> */}
     </div>
