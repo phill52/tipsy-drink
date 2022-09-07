@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/tipsy-drink/static/css/main.22478abf.css",
-    "main.js": "/tipsy-drink/static/js/main.2bf0db59.js",
+    "main.css": "/tipsy-drink/static/css/main.54e01eee.css",
+    "main.js": "/tipsy-drink/static/js/main.84f3c76a.js",
     "static/js/787.0468ed56.chunk.js": "/tipsy-drink/static/js/787.0468ed56.chunk.js",
+    "static/media/Snicker-Bold.ttf": "/tipsy-drink/static/media/Snicker-Bold.70fb8320d3cdb30c22c7.ttf",
     "static/media/homeboy1.mp3": "/tipsy-drink/static/media/homeboy1.e2544130ce035bc8b6a9.mp3",
     "index.html": "/tipsy-drink/index.html",
-    "main.22478abf.css.map": "/tipsy-drink/static/css/main.22478abf.css.map",
-    "main.2bf0db59.js.map": "/tipsy-drink/static/js/main.2bf0db59.js.map",
+    "main.54e01eee.css.map": "/tipsy-drink/static/css/main.54e01eee.css.map",
+    "main.84f3c76a.js.map": "/tipsy-drink/static/js/main.84f3c76a.js.map",
     "787.0468ed56.chunk.js.map": "/tipsy-drink/static/js/787.0468ed56.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22478abf.css",
-    "static/js/main.2bf0db59.js"
+    "static/css/main.54e01eee.css",
+    "static/js/main.84f3c76a.js"
   ]
 }
