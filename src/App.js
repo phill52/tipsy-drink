@@ -7,6 +7,8 @@ import {Howl} from 'howler'
 import {Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/Snicker-Bold.ttf';
+import cocktail from './assets/cocktail.PNG';
+
 
 const audioClips = [
   {sound: Homeboy1, label: 'Homeboy1'}
@@ -43,11 +45,15 @@ function App() {
     <div className="App">
       <div  className="Header">
         <h5 style={{fontSize:0}}>⠀</h5>
-        <h1 style={{marginTop:'5%', textAlign: 'center'}}>Feeling Tipsy?</h1>
-          <Button variant="danger" style={{justifyContent: 'center'}} onClick={()=>handlePress()}>Tipsy</Button>
-          <h4 style={{textAlign: 'center', marginTop:'10%'}}>Try the</h4>
-          <h2 style={{textAlign: 'center', alignContent: 'center'}}><span style={{backgroundColor: 'rgb(235,235,235)'}}>{drink}</span></h2>
-          <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5>
+        <h1 style={{fontFamily: 'Snicker', marginTop:'5%', textAlign: 'center', color: '#004E98', fontSize: 102}}>Feeling tipsy?</h1>
+        <div style={{display: 'flex', justifyContent:'center', alignItems:'center', marginTop:50}}>
+          <img src={cocktail}height={108} width={83}/>
+          <Button variant="danger" style={{fontFamily: 'Snicker', display: 'flex', justifyContent: 'center', alignItems: 'center'}} onClick={()=>handlePress()}>Make me a drink!</Button>
+          <img src={cocktail}height={108} width={83}/>
+        </div>
+        <h4 style={{fontFamily: 'Cafeteria', textAlign: 'center', marginTop:71, color: '#004E98', fontSize:35}}>And there you have it homeboy!</h4>
+        <h2 style={{fontFamily: 'Snicker', textAlign: 'center', marginTop: 18, alignContent: 'center', color: '#004E98'}}><span style={{borderRadius:10,padding:7, margin:5,backgroundColor: 'rgb(235,235,235)'}}>{drink}</span></h2>
+        <h5 className="Bottom" style={{fontSize:40}}>Drink responsibly. Never drink and drive.</h5>
       </div>
       {/* <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5> */}
     </div>
