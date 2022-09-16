@@ -3,77 +3,92 @@
         {
             "title":"Watermelon",
             "ingredient": "Watermelon Juice",
-            "id": 1
+            "id": 1,
+            "gradient": "#FF5733"
         },
         {
             "title":"Lime",
             "ingredient": "Lime Juice",
-            "id": 2
+            "id": 2,
+            "gradient": "#32CD32"
         },
         {
             "title":"Cranberry",
             "ingredient": "Cranberry Juice",
-            "id": 3
+            "id": 3,
+            "gradient": "#9F000F"
         },
         {
             "title":"Cotton Candy",
             "ingredient": "Cotton Candy",
-            "id": 4
+            "id": 4,
+            "gradient": "#ffbcd9"
         },
         {
             "title":"Cherry",
             "ingredient": "Cherry Juice",
-            "id": 5
+            "id": 5,
+            "gradient": "#D2042D"
         },
         {
             "title":"Peach",
             "ingredient": "Peach Juice",
-            "id": 6
+            "id": 6,
+            "gradient": "#f6a192"
         },
         {
             "title":"Pineapple",
             "ingredient": "Pineapple Juice",
-            "id": 7
+            "id": 7,
+            "gradient": "#FEEA63"
         },
         {
             "title":"Apple",
             "ingredient": "Apple Cider",
-            "id": 8
+            "id": 8,
+            "gradient": "#C7372F"
         },
         {
             "title":"Dragonfruit",
             "ingredient": "Dragonfruit",
-            "id": 9
+            "id": 9,
+            "gradient": "#d75969"
         },
         {
             "title":"Mango",
             "ingredient": "Mango Nectar",
-            "id": 10
+            "id": 10,
+            "gradient": "#F4BB44"
         },
         {
             "title":"Acai",
             "ingredient": "Acai",
-            "id": 11
+            "id": 11,
+            "gradient": "#5F3C4F"
         },
         {
             "title":"Blueberry",
             "ingredient": "Blueberry Syrup",
-            "id": 12
+            "id": 12,
+            "gradient": "#4f86f7"
         },
         {
             "title":"Sour Apple",
             "ingredient": "Sour Apple Pucker",
-            "id": 13
+            "id": 13,
+            "gradient": "#66b447"
         },
         {
             "title":"Raspberry",
             "ingredient": "Raspberry Syrup",
-            "id": 14
+            "id": 14,
+            "gradient": "#E30B5C"
         },
         {
             "title":"Orange",
             "ingredient": "Orange Juice",
-            "id": 15
+            "id": 15,
+            "gradient": "#FFA500"
         }
     ],
     "spirit": [
@@ -141,52 +156,50 @@
         {
             "title":"Blue",
             "color":true,
-            "id":1
+            "id":1,
+            "gradient":"#5C5CFF"
         },
         {
             "title":"Summer",
             "color":false,
-            "id":2
+            "id":2,
+            "gradient":"#ffd700"
         },
         {
             "title":"TikTok",
             "color":false,
-            "id":3
+            "id":3,
+            "gradient":"#ff0050"
         },
         {
             "title":"Tropical",
             "color":false,
-            "id":4
+            "id":4,
+            "gradient":"#99BE1B"
         },
         {
             "title":"Jolly Rancher",
             "color":false,
-            "id":5
+            "id":5,
+            "gradient":"#438efa"
         },
         {
             "title":"Pink",
             "color":true,
-            "id":6
-        },
-        {
-            "title":"Jersey",
-            "color":false,
-            "id":7
-        },
-        {
-            "title":"Popsicle",
-            "color":false,
-            "id":8
+            "id":6,
+            "gradient":"#FF0080"
         },
         {
             "title":"Unicorn",
             "color":false,
-            "id":9
+            "id":7,
+            "gradient":"#9f90d0"
         },
         {
             "title":"Budget",
             "color":false,
-            "id":10
+            "id":8,
+            "gradient":"#c0c0c0"
         }
     ],
     "container":[

@@ -8,7 +8,7 @@ import {Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/Snicker-Bold.ttf';
 import cocktail from './assets/cocktail.PNG';
-
+import { useSpring, animated } from 'react-spring'
 
 const audioClips = [
   {sound: Homeboy1, label: 'Homeboy1'}
@@ -25,9 +25,13 @@ function App() {
   {data.cocktail.map((item, i) => (cocktails.push(item)))}
   {data.theme.map((item, i) => (themes.push(item)))}
   {data.container.map((item, i) => (containers.push(item)))}
-
-  const [drink, setDrink] = useState(Generator(flavors,spirits,cocktails,themes,containers));
-
+  let [baseGradient, baseDrink] = Generator(flavors,spirits,cocktails,themes,containers);
+  const [drink, setDrink] = useState(baseDrink);
+  const [gradient, setGradient] = useState(`linear-gradient(#ebebeb,${baseGradient})`);
+  const fade = useSpring({
+    from: { opacity: "0" },
+    to: { opacity: "1" },
+  })
   const SoundPlay = (src) =>{
     const sound = new Howl({
       src
@@ -38,11 +42,13 @@ function App() {
   function handlePress(){
     console.log("pressed");
     SoundPlay(Homeboy1);
-    setDrink(Generator(flavors,spirits,cocktails,themes,containers));
+    let [color, drink] = Generator(flavors,spirits,cocktails,themes,containers);
+    setDrink(drink);
+    setGradient(`linear-gradient(#ebebeb,${color})`);
   }
 
   return (
-    <div className="App">
+    <div style={{width:'100%', minHeight:'100vh',background:gradient, transition:'0.2s linear' }} >
       <div  className="Header">
         <h5 style={{fontSize:0}}>⠀</h5>
         <h1 style={{fontFamily: 'Snicker', marginTop:'5%', textAlign: 'center', color: '#004E98', fontSize: 102}}>Feeling tipsy?</h1>
