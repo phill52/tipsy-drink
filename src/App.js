@@ -1,7 +1,7 @@
 import './App.css';
 import data from './data/db.json'
 import Generator from './Generator'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Homeboy1 from './assets/homeboy1.mp3'
 import {Howl} from 'howler'
 import {Button} from 'react-bootstrap';
@@ -28,10 +28,12 @@ function App() {
   let [baseGradient, baseDrink] = Generator(flavors,spirits,cocktails,themes,containers);
   const [drink, setDrink] = useState(baseDrink);
   const [gradient, setGradient] = useState(`linear-gradient(#ebebeb,${baseGradient})`);
-  const fade = useSpring({
-    from: { opacity: "0" },
-    to: { opacity: "1" },
-  })
+  const [flip, set] = useState(false)
+  const [fader, setFader] = useState(false);
+
+
+  const n = useRef(0);
+
   const SoundPlay = (src) =>{
     const sound = new Howl({
       src
@@ -45,6 +47,19 @@ function App() {
     let [color, drink] = Generator(flavors,spirits,cocktails,themes,containers);
     setDrink(drink);
     setGradient(`linear-gradient(#ebebeb,${color})`);
+    n.current--;
+    console.log("this is the part", n.current);
+    setFader(a=>!a);
+  }
+
+  const Bubble2 = () => {
+    const props = useSpring({
+      from: {opacity: "0", y: 30},
+      to: { opacity: "1", y:0 },
+    })
+    return <animated.div style={props}>          
+    <h2 style={{fontFamily: 'Snicker', textAlign: 'center', marginTop: 18, alignContent: 'center', color: '#004E98'}}><span style={{borderRadius:10,padding:7, margin:5,backgroundColor: 'rgb(235,235,235)'}}>{drink}</span></h2>
+    </animated.div>
   }
 
   return (
@@ -58,10 +73,9 @@ function App() {
           <img src={cocktail}height={108} width={83}/>
         </div>
         <h4 style={{fontFamily: 'Cafeteria', textAlign: 'center', marginTop:71, color: '#004E98', fontSize:35}}>And there you have it homeboy!</h4>
-        <h2 style={{fontFamily: 'Snicker', textAlign: 'center', marginTop: 18, alignContent: 'center', color: '#004E98'}}><span style={{borderRadius:10,padding:7, margin:5,backgroundColor: 'rgb(235,235,235)'}}>{drink}</span></h2>
+        <Bubble2 key={fader}/>
         <h5 className="Bottom" style={{fontSize:40}}>Drink responsibly. Never drink and drive.</h5>
       </div>
-      {/* <h5 className="Bottom">Drink responsibly. Never drink and drive.</h5> */}
     </div>
   );
 }

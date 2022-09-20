@@ -15,15 +15,9 @@ export default function Generator (flavors, spirits, cocktails, themes, containe
             color2 = color2[1] + color2[1] + color2[2] + color2[2] + color2[3] + color2[3];
         else
             color2 = color2.substring(1);   
-    
-        console.log('valid: c1 => ' + color1 + ', c2 => ' + color2);
-    
-        // 3: we have valid input, convert colors to rgb
         color1 = [parseInt(color1[0] + color1[1], 16), parseInt(color1[2] + color1[3], 16), parseInt(color1[4] + color1[5], 16)];
         color2 = [parseInt(color2[0] + color2[1], 16), parseInt(color2[2] + color2[3], 16), parseInt(color2[4] + color2[5], 16)];
-    
-        // 4: blend
-        let color3 = [ 
+            let color3 = [ 
             (1 - percentage) * color1[0] + percentage * color2[0], 
             (1 - percentage) * color1[1] + percentage * color2[1], 
             (1 - percentage) * color1[2] + percentage * color2[2]
@@ -132,11 +126,6 @@ export default function Generator (flavors, spirits, cocktails, themes, containe
             else color=blend_colors(themes[intThemeChoice].gradient, flavors[intFlavorChoice].gradient);
             break;
     }
-    // output=intDrinkChoice;
-    // console.log(intFlavorChoice);
-    // console.log(intCocktailChoice);
-    // output=flavors[intFlavorChoice].title+" "+cocktails[intCocktailChoice].title;
-    // output="hi there";
     return [color,output];
 
 }
