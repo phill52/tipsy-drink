@@ -42,13 +42,11 @@ function App() {
   }
 
   function handlePress(){
-    console.log("pressed");
     SoundPlay(Homeboy1);
     let [color, drink] = Generator(flavors,spirits,cocktails,themes,containers);
     setDrink(drink);
     setGradient(`linear-gradient(#ebebeb,${color})`);
     n.current--;
-    console.log("this is the part", n.current);
     setFader(a=>!a);
   }
 
